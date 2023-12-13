@@ -1,0 +1,59 @@
+@import 'colors.scss';
+
+.page__header--active{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    background-color: $transparentWhite;
+    .header__inner{
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+        left: -300px;
+        transition: transform 0.5s;
+        box-shadow: 20px 0px 50px -5px $headerShadow;
+    }
+    .header__inner--active{
+        transform: translateX(300px);
+    }
+    @media (min-width: 768px) {
+        .header__inner{
+        width: 320px;
+        }
+    }
+    .header__close{
+        display: flex;
+        margin: 27px 0 0 20px;
+    }
+    .header__burger{
+        display: none;
+    }
+    .header__logo{
+        position: absolute;
+        transform: translateX(70px) translateY(20px);
+    }
+    .header__logo--divider::before{
+        display: none;
+    }
+    .header__serch{
+        display: flex;
+        position: absolute;
+        transform: translateX(250px) translateY(27px);
+    }
+    .header__header-nav{
+        display: flex;
+    }
+    .header__feedback{
+        display: block;
+        margin: auto 15px 0;
+    }
+    .header__address{
+        display: block;
+    }
+    .header__lang{
+        display: flex;
+    }
+}

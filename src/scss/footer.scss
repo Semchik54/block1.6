@@ -1,0 +1,52 @@
+@import 'colors.scss';
+
+.footer{
+    color: $grayTextColor;
+    background-color:$lightGray;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+    @media (min-width: 768px){
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__address{
+        text-align: center;
+        font-size: 14px;
+        width: 218px;
+    }
+    @media (min-width: 768px){
+        &__address{
+            text-align: start;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        color: $grayTextColor;
+    }
+    @media (min-width: 768px){
+        &__link{
+            text-align: center;
+        }
+    }
+    &__text{
+        text-align: center;
+        font-size: 14px;
+        width: 312px;
+    }
+    @media (min-width: 768px){
+        &__text{
+            text-align: end;
+            width: 213px;
+        }
+    }
+    @media (min-width: 1336px){
+        &__text{
+            width: 330px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import 'colors.scss';
+
+.lang{
+    &__list{
+        display: flex;
+        list-style: none;
+    }
+    &__item{
+        margin-left: 15px;
+    }
+    &__button{
+       background-color: $white;
+        border: none;
+    }
+    &__button--active{
+        pointer-events: none;
+        color: $grayTextColor;
+    }
+}

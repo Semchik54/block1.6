@@ -1,0 +1,22 @@
+@import 'colors.scss';
+
+.link--icon{
+    background-color: $white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $pink;
+    transition: background-color 0.8s ease-in-out;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 10px;
+        width: 10px;
+        border-right: 2px solid $pink;
+        border-top: 2px solid $pink;
+        position: relative;
+        transform: rotate(45deg) translateX(19px) translateY(2px);
+        transition: border 0.8s ease-in-out;
+    }
+}

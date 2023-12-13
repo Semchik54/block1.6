@@ -1,0 +1,31 @@
+@import 'colors.scss';
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &__list{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+        align-items:center;
+        gap: 15px;
+    }
+    &__list--divider::before{
+        content: "";
+        Width: 2px;
+        Height: 32px;
+        background-color:$divider;
+        border-radius: 1px;
+        margin-right: 5px;
+    }
+    @media (min-width: 1336px){
+        &__list{
+            gap: 150px;  
+        }
+        &__list--divider::before{
+           display: none;
+        }
+    }
+}

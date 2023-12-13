@@ -1,0 +1,54 @@
+@import 'colors.scss';
+
+.nav{
+    &__list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+        overflow-x: auto;
+        height: 40px;
+        align-items: center;
+        list-style-type: none;
+        gap: 15px;
+    }
+    &__list--decor::after {
+        content: "";
+        position: absolute;
+        align-self: end;
+        margin-right: -2px;
+        background: linear-gradient(270deg, $lightGray 16.84%, $endShadow 100%);
+        width: 26px;
+        height: 40px;
+    }
+    @media(min-width: 1336px){
+        &__list {
+            margin-top: 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: auto;
+            align-items: flex-start;
+            margin-left:20px;
+        }
+        &__list--decor::after{
+            display: none;
+        }
+       
+    }
+    &__item--active {
+        border: 2px solid $blue;
+        border-radius: 5px;
+        background-color: $white;
+    }
+    &__link {
+        width: auto;
+        text-align: center;
+        margin-right: 10px;
+        padding: 5px 5px 5px 10px;
+        height: auto;
+        font-size: 16px;
+        color: $grayTextColor;
+        text-decoration: none;
+        display: block;
+    }
+}

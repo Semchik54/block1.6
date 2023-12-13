@@ -1,0 +1,161 @@
+@import 'colors.scss';
+
+.price{
+    &__section-title{
+        padding: 15px;
+    }
+    &__table{
+        padding: 15px 20px 0 15px;
+        height: 280px;
+    }
+    @media (min-width: 768px){
+        &__table{
+            height: auto;
+            width: 100%;
+        }
+    }
+    &__head{
+        display: none;
+    }
+    @media (min-width: 768px){
+        &__head{
+            display: flex;
+            
+        }
+    }
+    &__column{
+        color: $grayTextColor;
+        text-align: start;
+        vertical-align: bottom;
+        font-family: "TT Lakes Regular";
+    }
+    &__body{
+        display: flex;
+        padding: 5px;
+      
+    }
+    @media (min-width: 768px){
+        &__body{
+            display: flex;
+            flex-direction:column ;
+        }
+    }
+    &__row{
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+        width: 260px;
+        background-color: $white;
+        padding: 10px;
+        justify-content: space-between;
+       
+    }
+    &__row--gray{
+        background-color:$lightGray;
+    }
+    @media (min-width: 768px){
+        &__row{
+            display:grid ;
+            grid-template-columns: 5fr 1fr 1fr 1fr;
+           width: 100%;
+           height: 64px;
+           gap: 20px;
+           align-items: center;
+           justify-content: flex-start;
+           padding: 5px;
+           box-sizing: border-box;
+           vertical-align:middle;
+           border-bottom: 1px solid $lightGray;
+        }
+    }
+    &__description{
+        color: $grayTextColor;
+    }
+    @media (min-width: 768px){
+        &__description{
+          display: none;
+        }
+    }
+    &__item{
+        margin-bottom:8px ;
+    }
+    &__icon{
+        width: 119px;
+        height: 32px;
+        background-color: $pink;
+        border-radius: 30px;
+        align-self: flex-end;
+    }
+    @media (min-width: 768px){
+        &__icon{
+          align-self: center;
+        }
+    }
+    &__link{
+        width: 119px;
+        height: 32px;
+        border-radius:inherit ;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none;
+        color: $white;
+        font-family: "TT Lakes Medium";
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    &__link::after{
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-bottom: 3.3px solid $white;
+        border-right: 3.3px solid $white;
+        transform: rotate(315deg);
+        transition: transform 0.5s;
+    }
+    &__link:hover::after{
+        transform: rotate(135deg);
+    }
+    &__link:focus::after{
+        transform: rotate(135deg);
+    }
+
+    &__text{
+        margin-top: 15px;
+        margin-left:15px ;
+        width: 288px;
+        height: auto;
+        color: $blackTextColor;
+    }
+    @media (min-width: 768px){
+        &__text{
+            width: 450px;
+        }
+    }
+    &__confedent{
+        color: $blackTextColor;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-bottom: 40px;
+        font-family: 'TT Lakes Medium';
+        font-size: 16px;
+    }
+    &__confedent::after{
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid $pink;
+        border-right: 2px solid $pink;
+        margin-left: 5px;
+        transform: rotate(315deg);
+        transition: transform 0.8s;
+    }
+    &__confedent:hover::after{
+        transform: translateX(5px) rotate(315deg);
+    }
+}

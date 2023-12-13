@@ -1,0 +1,17 @@
+@import 'colors.scss';
+
+.title-modal{
+    display: flex;
+    padding-top: 20px; 
+    font-size: 24px;
+    font-family: 'TT Lakes Medium';
+    &::before{
+        content: "";
+        Width: 4px;
+        Height: 40px;
+        background-color: $decorativeItem;
+        border-radius: 0px 20px 20px 0px;
+        margin-left: 0;
+        margin-right: 10px; 
+    }
+}

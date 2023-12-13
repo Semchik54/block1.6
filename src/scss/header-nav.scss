@@ -1,0 +1,93 @@
+@import 'colors.scss';
+
+.header-nav{
+    &__list{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        align-items: flex-start;
+        color: $blackTextColor;
+        margin-left: 5px;
+        overflow: hidden;
+    }
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        margin: 5px;
+    }
+    &__link {
+        color: $blackTextColor;
+        transition: all 0.5s;
+        display: block;
+        padding: 10px;
+        width: 100%;
+        text-align: start;
+        border-radius: 7px;
+        text-decoration: none;
+    }
+    &__link--active {
+        color: $grayTextColor;
+        margin-left: 10px;
+        cursor:default;
+        pointer-events: none;
+    }
+    &__link--active::before {
+        content: "";
+        Width: 4px;
+        Height: 30px;
+        background-color: $decorativeItem;
+        border-radius: 0px 20px 20px 0px;
+        position: absolute;
+        transition: all 0.7s;
+        transform: translateX(-10px) translateY(-5px)
+    }
+    &__link:hover{
+        color:$grayTextColor;
+        transition:all 0.3s ;
+        background-color:$backGroundLink;
+        transform: translateX(10px);
+    }
+    &__link:hover::before {
+        content: "";
+        Width: 4px;
+        Height: 30px;
+        background-color: $decorativeItem;
+        border-radius: 0px 20px 20px 0px;
+        position: absolute;
+        transition: all 0.7s;
+        transform: translateX(-10px) translateY(-4px)
+    }
+    &__link:focus{
+        outline:none;
+       color:$grayTextColor;
+       transition:all 0.3s;
+       transform: translateX(10px);
+   }
+   &__link:focus::before {
+    content: "";
+    Width: 4px;
+    Height: 30px;
+    background-color: $decorativeItem;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    transition: all 0.7s;
+    transform: translateX(-10px) translateY(-5px)
+    }
+    &__link:active{
+        color: $pink;
+         transition:all 0.3s;
+     }
+     &__link:active::before {
+        content: "";
+        Width: 4px;
+        Height: 30px;
+        background-color: $decorativeItem;
+        border-radius: 0px 20px 20px 0px;
+        position: absolute;
+        transition: all 0.7s;
+        transform: translateX(-10px) translateY(-5px);
+    }
+    &__link--active:focus{
+        transform: translateX(0px)
+    }
+}

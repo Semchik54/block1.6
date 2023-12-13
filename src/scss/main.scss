@@ -1,0 +1,28 @@
+@import 'colors.scss';
+
+.main{
+    background-color: $lightGray;
+    &__title{
+        display: flex;
+        padding-top: 20px; 
+        font-size: 28px;
+        font-family: 'TT Lakes Medium';
+    }
+    &__title--decor::before{
+        content: "";
+        Width: 4px;
+        Height: 40px;
+        background-color: $decorativeItem;
+        border-radius: 0px 20px 20px 0px;
+        margin-left: 0;
+        margin-right: 10px; 
+    }
+    @media (min-width: 1336px) {
+        &__title{
+            margin-top:20px ;
+        }
+    }
+    &__nav {
+        margin: 20px 15px 10px 10px;
+    }
+}

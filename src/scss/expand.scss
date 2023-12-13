@@ -1,0 +1,27 @@
+@import "colors.scss";
+
+.expand{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inherit;
+    border: none;
+    width: 144px;
+    padding: 5px;
+    color: $blackTextColor;
+    font-size: 16px; 
+    &:hover{
+        outline: 2px solid $blue;
+        border-radius: 5px;
+    }
+    &:focus{
+        outline: 2px solid $blue;
+        border-radius: 5px;
+    }
+    &__icon {
+        transition: all 1s;
+    }
+    &__icon--active {
+        transform: rotate(180deg); 
+    }
+}

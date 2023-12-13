@@ -1,0 +1,103 @@
+@import 'colors.scss';
+
+.brand{
+    &__section-title{
+        padding: 15px;
+    }
+    &__swiper{
+        margin: 0 10px;
+        height: 130px;
+    }
+    @media (min-width: 768px){
+        &__swiper{
+            height: auto;
+            margin: 10px 15px 0px;
+            overflow-x:visibles;
+        }
+    }
+    &__swiper::after{
+        content: "";
+        position: absolute;
+        background: linear-gradient(270deg, $lightGray 16.84%, $endShadow 100%);
+        width: 26px;
+        height: 73px;
+        top: 15px;
+        right: -1px;
+        z-index: 10;
+    }
+    @media (min-width: 768px){
+        &__swiper::after{
+            display: none;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 768px){
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 170px;
+            gap: 10px 20px;
+            transition: all 1s
+        }
+    }
+    @media (min-width: 1336px){
+        &__list {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width: 768px){
+        &__list--active{
+            height:340px;
+        }
+    }
+    @media (min-width: 1336px){
+        &__list--active{
+            height:257px;
+        }
+    }
+    &__item {
+        width: 240px;
+        margin-top: 15px;
+        height: 72px;
+    }
+    @media (min-width: 768px){
+        &__item{
+            margin: 0;
+            width: 100%;
+        }
+    }
+    &__link {
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        height: 60%;
+        padding: 15px;
+        cursor: pointer;
+        justify-content: space-between;
+        width: auto;
+        border: 1.5px solid #B8FFEC;
+        border-radius: 5px;
+    }
+    &__link:hover .link--icon {
+        background-color: $pink;
+    }
+    &__link:hover .link--icon::after {
+        border-right: 2px solid white;
+        border-top: 2px solid white;
+    }
+    &__expand{
+        margin: 20px;
+        display: none;
+    }
+    @media (min-width: 768px){
+        &__expand{
+            display: flex;
+        }
+    }
+   
+}
