@@ -1352,8 +1352,7 @@ html {
     transition: transform 0.5s;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
-    overflow-y: auto; }
+    background-color: #ffffff; }
   .communication__inner--active {
     transform: translateX(-600px); }
   @media (min-width: 768px) {
@@ -1433,8 +1432,7 @@ html {
     transition: transform 0.5s;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
-    overflow-y: auto; }
+    background-color: #ffffff; }
   .call__inner--active {
     transform: translateX(-600px); }
   @media (min-width: 768px) {
