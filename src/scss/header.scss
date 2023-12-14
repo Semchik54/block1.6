@@ -8,14 +8,15 @@
     justify-content: flex-start;
     height: 88px;
     background-color: $white;
-    position: sticky;
+    overflow-y:auto ;
+    
     }
     @media (min-width: 1336px){
         &__inner{
         height: auto;
         flex-direction: column;
         align-items: flex-start;
-        position: fixed;
+        position: sticky;
         }
     }
     &__burger{
@@ -28,6 +29,7 @@
     }
     &__close{
         display: none;
+        flex: none;
     }
     &__logo{
         margin-left: 15px;
