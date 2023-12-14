@@ -48,6 +48,9 @@
 }
 
 .page{
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 135px;
     grid-template-areas: "header service"
@@ -76,8 +79,8 @@
         &__service{
             grid-area:unset;
             position: absolute;
-            top: 40px;
-            right: 3.2em;
+          top:40px;
+          right: 3.2em;
         }
         grid-template-columns: 320px 1fr;
         grid-template-areas: "header main"

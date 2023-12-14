@@ -59,25 +59,33 @@ resizableSwiper(
   },
 );
 
-let body = document.querySelector('.body')
+let body = document.querySelector('.body');
+
 let brandExpand = document.querySelector('.brand__expand');
 let brandList = document.querySelector('.brand__list');
-let aboutExpand = document.querySelector('.about__expand')
-let aboutContent = document.querySelector('.about__content')
-let techniqueExpand = document.querySelector('.technique__expand')
+
+let aboutExpand = document.querySelector('.about__expand');
+let aboutContent = document.querySelector('.about__content');
+
+let techniqueExpand = document.querySelector('.technique__expand');
 let techniqueList = document.querySelector('.technique__list');
-let burger = document.querySelector('.header__burger')
-let header = document.querySelector('.header')
-let headerInner =document.querySelector('.header__inner')
-let closeBurger = document.querySelector('.header__close')
-let communication = document.querySelector('.page__communication')
-let communicationClose = document.querySelector('.communication__close')
-let communicationExpand = document.querySelector('.feedback__message')
-let communicationInner = document.querySelector('.communication__inner')
-let call = document.querySelector('.page__call')
-let callClose = document.querySelector('.call__close')
-let callExpand = document.querySelector('.feedback__phone')
-let callInner = document.querySelector('.call__inner')
+
+let header = document.querySelector('.header');
+let headerInner = document.querySelector('.header__inner');
+let headerExpand = document.querySelector('.header__burger');
+let closeBurger = document.querySelector('.header__close');
+
+let communication = document.querySelector('.page__communication');
+let communicationInner = document.querySelector('.communication__inner');
+let communicationClose = document.querySelector('.communication__close');
+let communicationExpand = document.querySelector('.feedback__message');
+
+let call = document.querySelector('.page__call');
+let callInner = document.querySelector('.call__inner');
+let callExpand = document.querySelector('.feedback__phone');
+let callClose = document.querySelector('.call__close');
+
+
 
 function Expanded(expandClass, ariaExpand, expandWraper){
   const expandChildren = expandClass.children  
@@ -131,8 +139,8 @@ function closeModal(expandButton, expandWraper, wraperInner){
   }
 }
 
-burger.addEventListener('click', event=>{
-  modalExpand(burger, header, headerInner)
+headerExpand.addEventListener('click', event=>{
+  modalExpand(headerExpand, header, headerInner)
 })
 communicationExpand.addEventListener('click', event =>{
   modalExpand(communicationExpand, communication, communicationInner)

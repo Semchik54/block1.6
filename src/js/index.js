@@ -24,7 +24,7 @@ import '../scss/page--active.scss'
 import '../scss/comunication.scss'
 import '../scss/call.scss'
 import '../scss/title-modal.scss'
-import '../../node_modules/swiper/swiper.js'
-import '../../node_modules/swiper/modules/pagination.mjs'
+import 'swiper'
+import 'swiper/modules';
 import './script.js'
 console.log('Works!')
