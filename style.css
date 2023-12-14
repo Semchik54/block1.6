@@ -34,6 +34,9 @@ html {
   font-size: 16px; }
 
 .page {
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 135px;
   grid-template-areas: "header service" "main main" "footer footer"; }
@@ -612,7 +615,7 @@ html {
   .header__header-nav {
     display: none;
     margin-left: 0px;
-    margin-top: 15px; }
+    margin-top: 20px; }
   @media (min-width: 1336px) {
     .header__header-nav {
       display: block; } }
@@ -625,10 +628,10 @@ html {
   @media (min-width: 1336px) {
     .header__feedback {
       margin-left: 15px;
-      margin-top: auto; } }
+      margin-top: 20px; } }
   .header__address {
     display: none;
-    margin-top: 10px;
+    margin-top: 15px;
     font-style: normal; }
   @media (min-width: 1336px) {
     .header__address {
@@ -643,7 +646,7 @@ html {
     font-size: 24px; }
   .header__lang {
     display: none;
-    margin-top: 20px; }
+    margin-top: 30px; }
   @media (min-width: 1336px) {
     .header__lang {
       display: flex; } }
@@ -760,7 +763,7 @@ html {
     width: 50%; } }
 
 .about__content {
-  width: 270px;
+  width: auto;
   height: 95px;
   margin: 20px 20px 0;
   overflow: hidden;
