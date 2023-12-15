@@ -1,7 +1,6 @@
 @import 'colors.scss';
 
 .header{
-    transition: transform 0.5s;
     &__inner{
     display:flex;
     align-items:center;
@@ -38,7 +37,7 @@
     }
     @media (min-width: 1336px){
         &__logo{
-            margin-top:35px ;
+            margin-top:30px ;
         }
     }   
     @media (min-width: 767px){
@@ -63,7 +62,7 @@
         &__serch{
             display: flex;
             position: absolute;
-            transform: translateX(250px) translateY(40px);
+            transform: translateX(250px) translateY(35px);
         }
     }
     &__header-nav{
@@ -74,6 +73,7 @@
     @media (min-width: 1336px){
         &__header-nav{
             display:block;
+            margin-top: 30px;
         }
     }
     
@@ -90,14 +90,13 @@
     }
     @media (min-width: 1336px) {
         &__feedback{
-            margin-left:15px ;
-            margin-top: 40px;
+            margin: 120px 15px 0px;
            
         }
     }
     &__address{
         display: none;
-        margin-top: 20px;
+        margin-top: 15px;
         font-style: normal;
     }
     @media (min-width: 1336px) {
