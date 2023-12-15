@@ -564,92 +564,111 @@ html {
   .expand__icon--active {
     transform: rotate(180deg); }
 
-.header {
-  transition: transform 0.5s; }
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 88px;
+  background-color: #ffffff;
+  overflow-y: auto; }
+
+@media (min-width: 1336px) {
   .header__inner {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 88px;
-    background-color: #ffffff;
-    overflow-y: auto; }
-  @media (min-width: 1336px) {
-    .header__inner {
-      height: auto;
-      flex-direction: column;
-      align-items: flex-start;
-      position: sticky; } }
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    position: sticky; } }
+
+.header__burger {
+  margin-left: 15px; }
+
+@media (min-width: 1336px) {
   .header__burger {
-    margin-left: 15px; }
-  @media (min-width: 1336px) {
-    .header__burger {
-      display: none; } }
-  .header__close {
-    display: none;
-    flex: none; }
+    display: none; } }
+
+.header__close {
+  display: none;
+  flex: none; }
+
+.header__logo {
+  margin-left: 15px;
+  display: flex;
+  align-items: center; }
+
+@media (min-width: 1336px) {
   .header__logo {
-    margin-left: 15px;
-    display: flex;
-    align-items: center; }
-  @media (min-width: 1336px) {
-    .header__logo {
-      margin-top: 35px; } }
-  @media (min-width: 767px) {
-    .header__logo--divider::before {
-      content: "";
-      Width: 2px;
-      Height: 32px;
-      background-color: #EAEAEA;
-      border-radius: 1px;
-      margin: 0 15px 0 10px; } }
-  @media (min-width: 1336px) {
-    .header__logo--divider::before {
-      display: none; } }
+    margin-top: 30px; } }
+
+@media (min-width: 767px) {
+  .header__logo--divider::before {
+    content: "";
+    Width: 2px;
+    Height: 32px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+    margin: 0 15px 0 10px; } }
+
+@media (min-width: 1336px) {
+  .header__logo--divider::before {
+    display: none; } }
+
+.header__serch {
+  display: none; }
+
+@media (min-width: 1336px) {
   .header__serch {
-    display: none; }
-  @media (min-width: 1336px) {
-    .header__serch {
-      display: flex;
-      position: absolute;
-      transform: translateX(250px) translateY(40px); } }
+    display: flex;
+    position: absolute;
+    transform: translateX(250px) translateY(35px); } }
+
+.header__header-nav {
+  display: none;
+  margin-left: 0px;
+  margin-top: 20px; }
+
+@media (min-width: 1336px) {
   .header__header-nav {
-    display: none;
-    margin-left: 0px;
-    margin-top: 20px; }
-  @media (min-width: 1336px) {
-    .header__header-nav {
-      display: block; } }
+    display: block;
+    margin-top: 30px; } }
+
+.header__feedback {
+  display: none; }
+
+@media (min-width: 767px) {
   .header__feedback {
-    display: none; }
-  @media (min-width: 767px) {
-    .header__feedback {
-      display: block;
-      margin-left: auto; } }
-  @media (min-width: 1336px) {
-    .header__feedback {
-      margin-left: 15px;
-      margin-top: 40px; } }
+    display: block;
+    margin-left: auto; } }
+
+@media (min-width: 1336px) {
+  .header__feedback {
+    margin: 120px 15px 0px; } }
+
+.header__address {
+  display: none;
+  margin-top: 15px;
+  font-style: normal; }
+
+@media (min-width: 1336px) {
   .header__address {
-    display: none;
-    margin-top: 20px;
-    font-style: normal; }
-  @media (min-width: 1336px) {
-    .header__address {
-      display: block; } }
-  .header__link {
-    margin: 20px 15px;
-    text-decoration: none;
-    color: #1B1C21;
-    transition: color 0.2s;
-    font-family: 'TT Lakes Medium'; }
-  .header__link--font-size--24px {
-    font-size: 24px; }
+    display: block; } }
+
+.header__link {
+  margin: 20px 15px;
+  text-decoration: none;
+  color: #1B1C21;
+  transition: color 0.2s;
+  font-family: 'TT Lakes Medium'; }
+
+.header__link--font-size--24px {
+  font-size: 24px; }
+
+.header__lang {
+  display: none;
+  margin-top: 30px; }
+
+@media (min-width: 1336px) {
   .header__lang {
-    display: none;
-    margin-top: 30px; }
-  @media (min-width: 1336px) {
-    .header__lang {
-      display: flex; } }
+    display: flex; } }
 
 .main {
   background-color: #F8F8F8; }
