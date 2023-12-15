@@ -628,10 +628,10 @@ html {
   @media (min-width: 1336px) {
     .header__feedback {
       margin-left: 15px;
-      margin-top: 20px; } }
+      margin-top: 40px; } }
   .header__address {
     display: none;
-    margin-top: 15px;
+    margin-top: 20px;
     font-style: normal; }
   @media (min-width: 1336px) {
     .header__address {
